@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 812px;
+}
+
+.panel-1 {
+    border: 1px solid hsl(228, 56%, 26%);
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px 100px 10px 10px;
+    padding: 40px 100px 20px 40px;
+    width: 200px;
+    margin: 70px 15px 20px;
+}
+
+.logo {
+    margin-bottom: 30px;
+}
+
+.panel-2 {
+        border: 1px solid hsl(228, 56%, 26%);
+        background-color: hsl(228, 56%, 26%);
+        color:  hsl(243, 100%, 93%);
+        border-radius: 10px;
+        padding: 40px;
+        width: 260px;
+        margin: 0px 15px;
+}
+.icon-doc {
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px 12px;
+margin-right: 10px;
+    border-radius: 10px;
+}
+.icon-fold {
+    background-color: hsl(229, 57%, 11%);
+    padding: 12px 10px;
+margin-right: 10px;
+    border-radius: 10px;
+}
+.icon-upl {
+    background-color: hsl(229, 57%, 11%);
+    padding: 14px 10px ;
+
+    border-radius: 10px;
+}
+.gb {
+font-weight: 700;
+}
+.icons {
+    margin-bottom: 20px;
+}
+.panel-3 {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px 25px;
+    position: relative;
+    bottom: 40px;
+    font-size: 12px;
+}
+.leftover {
+    font-weight: 700;
+    font-size: 50px;
+    color: black;
+
+}
+.storage-left {
+color: gray;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+.main-text {
+    text-align: center;
+    font-size: 15px;
+}
+.slider {
+    width: 100%;
+    margin: 15px auto;
+    position: relative;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 8px;
+}
+
+#storage {
+    -webkit-appearance: none;
+    width: 81.5%;
+    height: 15px;
+    outline: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+#storage::-webkit-slider-thumb {
+-webkit-appearance: none;
+position: relative;
+height: 15px;
+width: 15px;
+cursor: pointer;
+background-color: white;
+overflow: visible;
+border-radius: 50%;
+}
+.storage-range {
+    margin-bottom: 30px;
+}
+.ll {
+    margin-right: 169px;
+    font-weight: 700;
+}
+.up {
+    font-weight: 700;
+}
+
+#gb {
+    position: relative;
+    bottom: 15px;
+    left: 5px;
+    font-size: 15px; 
+}
+
+@media (min-width:1400px) {
+    body {
+        background-color: hsl(229, 57%, 11%);
+          background-image: url(images/bg-desktop.png);
+       background-size: cover;
+       background-position: 0px 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    }
+    .panel-1 {
+        position: relative;
+        bottom: 25px;
+
+    }
+    .panel-2 {
+        position: relative;
+        top: 18px;  
+        padding: 10px;
+        margin: 0px 5px;
+        width: 40%;
+    }
+    .storage-range {
+        margin-bottom: 15px;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    .icons {
+            margin-bottom: 10px;
+    }
+    .main-text {
+        margin: 20px 25px;
+        text-align: left;
+    }
+    .panel-3 {
+        display: flex;
+        flex-direction: row;
+        border-bottom-right-radius: 0px;
+        float: left;
+        position: relative;
+        right: 240px;
+        bottom: 75px
+     ;
+    }
+    .slider {
+        width: 90%;
+    }
+    .ll {
+margin-left: 25px;        
+font-weight: 700;
+    }
+    .up {
+margin-right: 10px;
+        font-weight: 700;
+        position: absolute;
+        left: 420px;
+        padding-right: 15px;
+    }
+    #gb {
+        font-size: 13px;
+    }
+    .tip {
+        border-left:10px solid transparent;
+        border-bottom:30px solid transparent;
+        border-right: 30px solid white;
+        position:absolute;
+        right: -1px;
+     top: 70px;
+      }
+}
